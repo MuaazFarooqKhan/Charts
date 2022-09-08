@@ -1,11 +1,18 @@
 // styles.scss
 @import '~@riapacheco/yutes/main.scss'; // For stripping styles & antialiasing
 @import '~@riapacheco/yutes/seasonal.scss'; // To access dark color palette
+@import 'ag-grid-community/styles/ag-grid.css';
+@import 'ag-grid-community/styles/ag-theme-alpine.css';
 
 html, body {
-  font-size: 17px;
-  background-color: $midnight-dark;
-  background-image: linear-gradient(to bottom right, $midnight-dark, $midnight-medium);
-  background-attachment: fixed; // The background is fixed relative to the viewport
-  color: $steel-regular; // Change text color to an _almost_ white
+   height: 100%;
+   width: 100%;
+   padding: 5px;
+   box-sizing: border-box;
+   -webkit-overflow-scrolling: touch;
+   font-size: 17px;
+   background-color: $midnight-dark;
+   background-image: linear-gradient(to bottom right, $midnight-dark, $midnight-medium);
+   background-attachment: fixed; // The background is fixed relative to the viewport
+   color: $steel-regular; // Change text color to an _almost_ white
 }

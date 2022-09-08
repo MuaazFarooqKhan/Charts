@@ -6,7 +6,7 @@ import { NgChartsModule } from 'ng2-charts';
 import { ChartModule, HIGHCHARTS_MODULES } from 'angular-highcharts';
 import * as more from 'highcharts/highcharts-more.src';
 import * as exporting from 'highcharts/modules/exporting.src';
-
+import { AgGridModule } from 'ag-grid-angular';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LineChartComponent } from './components/line-chart/line-chart.component';
@@ -28,6 +28,7 @@ import { GraphQLModule } from './graphql.module';
     ApolloModule,
     HttpClientModule,
     GraphQLModule,
+    AgGridModule,
   ],
   providers: [
     { provide: HIGHCHARTS_MODULES, useFactory: () => [more, exporting] }, // add as factory to your providers
